@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Our Process — Innova Search</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#FBFAF6;color:#181818;padding:32px 24px}
+  /* STAT STRIP */
+  .stat-strip{display:flex;gap:0;border-radius:8px;overflow:hidden;margin-bottom:40px}
+  .stat-tile{flex:1;background:#B9DA93;padding:20px 16px;text-align:center}
+  .stat-tile+.stat-tile{border-left:1px solid rgba(4,58,49,.15)}
+  .stat-number{font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:700;color:#181818;line-height:1.1;display:block}
+  .stat-label{font-size:11px;color:#181818;margin-top:4px;display:block;letter-spacing:.3px}
+  /* TIMELINE */
+  .timeline-wrap{position:relative;padding:0 0 8px}
+  .timeline-track{display:flex;gap:0;position:relative}
+  /* desktop rail */
+  .timeline-track::before{
+    content:'';position:absolute;
+    top:43px;left:24px;right:24px;height:2px;
+    background:#B9DA93;z-index:0
+  }
+  .stage{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 6px;position:relative;z-index:1}
+  .stage-num{font-size:11px;color:#043A31;letter-spacing:2px;text-transform:uppercase;height:16px;line-height:16px;margin-bottom:4px;font-weight:600}
+  .badge{width:48px;height:48px;border-radius:50%;background:#B9DA93;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:2}
+  .badge svg{width:24px;height:24px;stroke:#043A31;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .stage-name{font-family:Georgia,'Times New Roman',serif;font-size:14px;color:#181818;margin-top:8px;line-height:1.3;font-weight:600}
+  .week-chip{display:inline-block;background:#B9DA93;color:#181818;font-size:11px;padding:2px 10px;border-radius:999px;margin-top:6px;white-space:nowrap}
+  .stage-desc{font-size:13px;color:#181818;margin-top:6px;line-height:1.4;max-width:130px}
+  /* CAPTION */
+  .caption{text-align:center;font-style:italic;font-size:13px;color:#555;margin-top:28px;max-width:720px;margin-left:auto;margin-right:auto;line-height:1.6}
+  /* MOBILE */
+  @media(max-width:919px){
+    .stat-strip{flex-direction:column;border-radius:8px}
+    .stat-tile+.stat-tile{border-left:none;border-top:1px solid rgba(4,58,49,.15)}
+    .timeline-track{flex-direction:column;gap:20px;padding-left:40px}
+    .timeline-track::before{
+      top:24px;bottom:24px;left:23px;right:auto;width:2px;height:auto
+    }
+    .stage{flex-direction:row;align-items:flex-start;text-align:left;gap:14px}
+    .stage-left{display:flex;flex-direction:column;align-items:center;flex-shrink:0}
+    .stage-num{margin-bottom:0;height:auto;margin-top:0}
+    .stage-content{display:flex;flex-direction:column;align-items:flex-start}
+    .week-chip{align-self:flex-start}
+    .stage-desc{max-width:none}
+  }
+  @media(min-width:920px){
+    .stage-left{display:contents}
+    .stage-content{display:contents}
+  }
+</style>
+</head>
+<body>
+
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <div class="stat-tile">
+    <span class="stat-number">8–10 weeks</span>
+    <span class="stat-label">engagement to offer</span>
+  </div>
+  <div class="stat-tile">
+    <span class="stat-number">10–15</span>
+    <span class="stat-label">candidates longlisted</span>
+  </div>
+  <div class="stat-tile">
+    <span class="stat-number">4–8</span>
+    <span class="stat-label">candidates shortlisted</span>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<div class="timeline-wrap">
+  <div class="timeline-track">
+
+    <!-- 01 Scoping -->
+    <div class="stage">
+      <div class="stage-left">
+        <span class="stage-num">01</span>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><polyline points="9 7 12 10 16 6"/><line x1="8" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="13" y2="18"/></svg>
+        </div>
+      </div>
+      <div class="stage-content">
+        <div class="stage-name">Scoping &amp; brief</div>
+        <span class="week-chip">Week 1</span>
+        <p class="stage-desc">Stakeholder conversations, written brief, operating model agreed before market.</p>
+      </div>
+    </div>
+
+    <!-- 02 Market mapping -->
+    <div class="stage">
+      <div class="stage-left">
+        <span class="stage-num">02</span>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+      </div>
+      <div class="stage-content">
+        <div class="stage-name">Market mapping</div>
+        <span class="week-chip">Weeks 1–2</span>
+        <p class="stage-desc">400–600 profiles reviewed. Assessed on context and trajectory, not keywords.</p>
+      </div>
+    </div>
+
+    <!-- 03 Calibration -->
+    <div class="stage">
+      <div class="stage-left">
+        <span class="stage-num">03</span>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10"/><path d="M12 6v6l3 3"/><circle cx="12" cy="12" r="1"/><path d="M2 12a10 10 0 0 0 10 10"/></svg>
+        </div>
+      </div>
+      <div class="stage-content">
+        <div class="stage-name">Calibration</div>
+        <span class="week-chip">Weeks 1–2</span>
+        <p class="stage-desc">We test the brief against the market and recalibrate before the shortlist.</p>
+      </div>
+    </div>
+
+    <!-- 04 Shortlist -->
+    <div class="stage">
+      <div class="stage-left">
+        <span class="stage-num">04</span>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="4" rx="1"/><rect x="4" y="11" width="16" height="4" rx="1"/><rect x="4" y="17" width="10" height="4" rx="1"/><polygon points="19 17 22 21 16 21"/></svg>
+        </div>
+      </div>
+      <div class="stage-content">
+        <div class="stage-name">Shortlist</div>
+        <span class="week-chip">Weeks 3–4</span>
+        <p class="stage-desc">Four to eight candidates, written executive profiles, a clear recommendation.</p>
+      </div>
+    </div>
+
+    <!-- 05 Interview cadence -->
+    <div class="stage">
+      <div class="stage-left">
+        <span class="stage-num">05</span>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="17 14 12 14 12 19"/></svg>
+        </div>
+      </div>
+      <div class="stage-content">
+        <div class="stage-name">Interview cadence</div>
+        <span class="week-chip">Weeks 4–8</span>
+        <p class="stage-desc">Weekly cadence calls. Pipeline status, candidate feedback, market observations.</p>
+      </div>
+    </div>
+
+    <!-- 06 Offer & close -->
+    <div class="stage">
+      <div class="stage-left">
+        <span class="stage-num">06</span>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/><path d="M7 17l1.5-1.5L10 17"/></svg>
+        </div>
+      </div>
+      <div class="stage-content">
+        <div class="stage-name">Offer &amp; close</div>
+        <span class="week-chip">Weeks 8–10</span>
+        <p class="stage-desc">Benchmarking, structuring, and conversations that don't work across a table.</p>
+      </div>
+    </div>
+
+    <!-- 07 Transition -->
+    <div class="stage">
+      <div class="stage-left">
+        <span class="stage-num">07</span>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a6 6 0 0 1 6-6h0"/><path d="M16 11l2 2 4-4"/><path d="M18 17v4"/><path d="M16 19h4"/></svg>
+        </div>
+      </div>
+      <div class="stage-content">
+        <div class="stage-name">Transition</div>
+        <span class="week-chip">Post-placement</span>
+        <p class="stage-desc">Counteroffers, nerves, and the first months in seat. We stay involved.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CAPTION -->
+<p class="caption">Indicative timeline: 8–10 weeks from engagement to accepted offer. When the brief is urgent, we compress without sacrificing quality. The pace flexes; the discipline doesn't.</p>
+
+</body>
+</html>
