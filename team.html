@@ -38,6 +38,195 @@
     transition: none;
   }
 
+  /* Photo placeholder */
+  .photo {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: #c8d4cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .photo svg {
+    opacity: 0.45;
+  }
+
+  .name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #043A31;
+    margin-bottom: 4px;
+    font-family: 'Georgia', serif;
+  }
+  .role {
+    font-size: 0.82rem;
+    color: #4a6058;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-family: 'Georgia', serif;
+  }
+  .focus-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #043A31;
+    margin-bottom: 4px;
+  }
+  .focus {
+    font-size: 0.88rem;
+    color: #2a2a2a;
+    line-height: 1.55;
+    margin-bottom: 18px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+    margin-top: auto;
+  }
+  .contact a {
+    font-size: 0.82rem;
+    color: #043A31;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: Georgia, serif;
+  }
+  .contact a:hover { text-decoration: underline; }
+  .contact-icon { flex-shrink: 0; }
+  .divider { border: none; border-top: 1px solid #d8e8d0; margin: 14px 0; width: 100%; }
+</style>
+</head>
+<body>
+<div class="team-grid">
+
+  <!-- CARD 1: Jake Rose -->
+  <div class="card" id="card-jake">
+    <div class="photo">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="17" r="9" fill="#7a9a8a"/>
+        <ellipse cx="22" cy="38" rx="15" ry="9" fill="#7a9a8a"/>
+      </svg>
+    </div>
+    <div class="name">Jake Rose</div>
+    <div class="role">Co-Founder, Technology Leadership Search Partner</div>
+    <hr class="divider">
+    <div class="focus-label">Focus</div>
+    <div class="focus">CIO, CTO, CDO, CPTO and senior technology leadership across PE-backed, ASX-listed, and scaling software businesses</div>
+    <div class="contact">
+      <a href="mailto:jake.rose@innova.com.au" class="contact-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#043A31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        jake.rose@innova.com.au
+      </a>
+      <a href="#" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#043A31" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- CARD 2: Marie Higgins -->
+  <div class="card" id="card-marie">
+    <div class="photo">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="17" r="9" fill="#7a9a8a"/>
+        <ellipse cx="22" cy="38" rx="15" ry="9" fill="#7a9a8a"/>
+      </svg>
+    </div>
+    <div class="name">Marie Higgins</div>
+    <div class="role">Co-Founder, Product and Engineering Search Partner</div>
+    <hr class="divider">
+    <div class="focus-label">Focus</div>
+    <div class="focus">Software engineering and product leadership hiring, diversity hiring</div>
+    <div class="contact">
+      <a href="mailto:marie.higgins@innova.com.au">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#043A31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        marie.higgins@innova.com.au
+      </a>
+      <a href="#" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#043A31" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- CARD 3: Lewis Heeks -->
+  <div class="card" id="card-lewis">
+    <div class="photo">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="17" r="9" fill="#7a9a8a"/>
+        <ellipse cx="22" cy="38" rx="15" ry="9" fill="#7a9a8a"/>
+      </svg>
+    </div>
+    <div class="name">Lewis Heeks</div>
+    <div class="role">Co-Founder, Data, AI and Platform Search Partner</div>
+    <hr class="divider">
+    <div class="focus-label">Focus</div>
+    <div class="focus">Data, AI, and platform leadership across CDO, Head of Data, Head of AI, and platform engineering appointments</div>
+    <div class="contact">
+      <a href="mailto:lewis.heeks@innova.com.au">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#043A31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        lewis.heeks@innova.com.au
+      </a>
+      <a href="#" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#043A31" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn &rarr;
+      </a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Team — Innova Search</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Georgia', serif;
+    background: #FBFAF6;
+    color: #181818;
+    padding: 48px 32px 56px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 680px) {
+    .team-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Base card */
+  .card {
+    background: #fff;
+    border: 1.5px solid #d8e8d0;
+    border-radius: 8px;
+    padding: 28px 22px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: none;
+  }
+
   /* Lead-partner highlighted card */
   .card.lead {
     border: 2.5px solid #043A31;
