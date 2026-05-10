@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Business &mdash; Exclusive Engagement | Innova Search</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #FBFAF6;
+    color: #181818;
+    padding: 40px 32px 0;
+    line-height: 1.65;
+  }
+
+  /* HEADER */
+  .doc-header {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1.5px solid #B9DA93;
+  }
+  .doc-eyebrow {
+    font-family: 'Georgia', serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #043A31;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .doc-title {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #043A31;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
+  }
+  .doc-subtitle {
+    font-size: 0.98rem;
+    color: #4a6058;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  /* CLAUSES */
+  .clause {
+    margin-bottom: 36px;
+  }
+  .clause + .clause {
+    border-top: 1px solid rgba(185, 218, 147, 0.45);
+    padding-top: 32px;
+  }
+  .clause-num {
+    display: block;
+    font-family: 'Georgia', serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #B9DA93;
+    letter-spacing: 0.16em;
+    margin-bottom: 8px;
+  }
+  .clause-num .label {
+    color: #043A31;
+    margin-left: 12px;
+    text-transform: uppercase;
+  }
+  .clause-heading {
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #043A31;
+    margin-bottom: 14px;
+    letter-spacing: -0.005em;
+    line-height: 1.25;
+  }
+  .clause-body {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #181818;
+  }
+  .clause-body p + p {
+    margin-top: 14px;
+  }
+
+  /* DEFINED TERM */
+  .term {
+    color: #043A31;
+    font-weight: 700;
+  }
+
+  /* CONDITIONS LIST */
+  .conditions {
+    list-style: none;
+    margin: 18px 0 0;
+    padding: 0;
+  }
+  .conditions li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    font-size: 0.97rem;
+    line-height: 1.65;
+  }
+  .conditions li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background: #B9DA93;
+    border-radius: 50%;
+  }
+
+  /* TABLES (fee + milestones share styling) */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0 14px;
+    background: #fff;
+    border: 1px solid rgba(4, 58, 49, 0.10);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .data-table thead th {
+    background: #B9DA93;
+    color: #043A31;
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    text-align: left;
+    padding: 13px 20px;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .data-table tbody td {
+    padding: 14px 20px;
+    border-top: 1px solid rgba(4, 58, 49, 0.08);
+    font-size: 0.97rem;
+    color: #181818;
+    vertical-align: top;
+  }
+  .fee-table tbody td:last-child {
+    font-weight: 700;
+    color: #043A31;
+    text-align: right;
+    width: 110px;
+    font-variant-numeric: tabular-nums;
+  }
+  .milestone-table tbody td:first-child {
+    font-weight: 700;
+    color: #043A31;
+    width: 38%;
+  }
+
+  /* FOOTNOTE under tables / clauses */
+  .footnote {
+    font-size: 0.9rem;
+    color: #4a6058;
+    line-height: 1.6;
+    margin-top: 12px;
+  }
+
+  /* DOC FOOTER (identity only, no signatures) */
+  .doc-footer {
+    margin-top: 48px;
+    padding: 20px 0 24px;
+    border-top: 1.5px solid #B9DA93;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    font-size: 0.86rem;
+    color: #4a6058;
+  }
+  .doc-footer .brand {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    color: #043A31;
+    letter-spacing: 0.04em;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 680px) {
+    body { padding: 32px 22px 0; }
+    .doc-title { font-size: 1.55rem; }
+    .clause-heading { font-size: 1.1rem; }
+    .data-table thead th,
+    .data-table tbody td { padding: 11px 14px; font-size: 0.92rem; }
+    .fee-table tbody td:last-child { width: 80px; }
+    .milestone-table tbody td:first-child { width: 45%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="doc-header">
+  <div class="doc-eyebrow">Innova Search</div>
+  <h1 class="doc-title">Exclusive engagement &mdash; Terms of Business</h1>
+  <p class="doc-subtitle">Standard terms applying to exclusive search engagements with Innova Search Pty Ltd. Per-deal commercials (engagement fee, completion fee, exclusivity period) are set out in the proposal accepted alongside these terms.</p>
+</header>
+
+<!-- 01 ENGAGEMENT -->
+<section class="clause">
+  <span class="clause-num">01<span class="label">Engagement</span></span>
+  <h2 class="clause-heading">The engagement</h2>
+  <div class="clause-body">
+    <p>These terms apply where the Client (the engaging counterparty named in the proposal) appoints Innova Search Pty Ltd (<span class="term">Innova</span>) on an exclusive basis to identify and introduce a candidate for a senior leadership role. Exclusivity allows Innova to represent the Client properly in the market and gives the search the depth of attention it requires.</p>
+    <p>The role, exclusivity period, and engagement amounts are set out in the proposal accepted alongside these terms.</p>
+  </div>
+</section>
+
+<!-- 02 FEE -->
+<section class="clause">
+  <span class="clause-num">02<span class="label">Fee</span></span>
+  <h2 class="clause-heading">Placement fee</h2>
+  <div class="clause-body">
+    <p>Placement fees are calculated as a percentage of the candidate's <span class="term">Total Annual Gross Remuneration (TAGR)</span>, defined as base salary plus superannuation plus any sign-on or guaranteed bonuses.</p>
+    <table class="data-table fee-table" aria-label="Innova fee tiers by candidate TAGR">
+      <thead>
+        <tr><th scope="col">TAGR (AUD)</th><th scope="col">Fee</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>$1 &ndash; $149,999</td><td>20%</td></tr>
+        <tr><td>$150,000 &ndash; $219,999</td><td>22%</td></tr>
+        <tr><td>$220,000 &ndash; $349,999</td><td>24%</td></tr>
+        <tr><td>$350,000 and above</td><td>26%</td></tr>
+      </tbody>
+    </table>
+    <p class="footnote">All fees are exclusive of GST and payable within 30 days of invoice. If GST becomes payable under applicable law, it will be added to the invoice. Any dispute regarding an invoice must be raised in writing within seven (7) days of the invoice date.</p>
+  </div>
+</section>
+
+<!-- 03 PAYMENT -->
+<section class="clause">
+  <span class="clause-num">03<span class="label">Payment</span></span>
+  <h2 class="clause-heading">Payment schedule</h2>
+  <div class="clause-body">
+    <p>For exclusive engagements, the placement fee is split across two milestones, with the specific amounts set out in the engaging proposal.</p>
+    <table class="data-table milestone-table" aria-label="Milestone payment schedule">
+      <thead>
+        <tr><th scope="col">Milestone</th><th scope="col">Timing</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Engagement fee</td><td>Payable on signing of the engaging proposal.</td></tr>
+        <tr><td>Completion payment</td><td>Payable on the candidate's commencement date.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 04 EXCLUSIVITY -->
+<section class="clause">
+  <span class="clause-num">04<span class="label">Exclusivity</span></span>
+  <h2 class="clause-heading">Exclusivity</h2>
+  <div class="clause-body">
+    <p>The engagement is exclusive for the period set out in the engaging proposal, from the date of signing. During this period the Client agrees not to engage any other search firm or recruitment agency for the same role.</p>
+  </div>
+</section>
+
+<!-- 05 REPLACEMENT GUARANTEE -->
+<section class="clause">
+  <span class="clause-num">05<span class="label">Guarantee</span></span>
+  <h2 class="clause-heading">Replacement guarantee</h2>
+  <div class="clause-body">
+    <p>If a candidate placed by Innova leaves their employment within 13 weeks of commencement (inclusive of any notice period), Innova will use reasonable efforts to introduce a replacement candidate for the same role at no additional fee, subject to the following conditions:</p>
+    <ul class="conditions">
+      <li>The candidate's departure is voluntary and not due to redundancy, organisational restructure, material change to the role, or termination by the Client (including performance-related termination).</li>
+      <li>The replacement search is limited to the original role scope, including substantially similar responsibilities, seniority, and remuneration.</li>
+      <li>The Client continues to engage Innova on an exclusive basis for the replacement search.</li>
+      <li>All invoices have been paid in full in accordance with agreed terms.</li>
+    </ul>
+    <p class="footnote">No refunds will be provided under any circumstances. Replacement availability is not guaranteed.</p>
+  </div>
+</section>
+
+<!-- 06 EXPENSES -->
+<section class="clause">
+  <span class="clause-num">06<span class="label">Expenses</span></span>
+  <h2 class="clause-heading">Expenses</h2>
+  <div class="clause-body">
+    <p>Direct search expenses are charged at cost with prior written approval from the Client. No mark-ups are applied.</p>
+  </div>
+</section>
+
+<!-- 07 CONFIDENTIALITY -->
+<section class="clause">
+  <span class="clause-num">07<span class="label">Confidentiality</span></span>
+  <h2 class="clause-heading">Confidentiality</h2>
+  <div class="clause-body">
+    <p>Both parties agree to keep the engagement, candidate identities, and any commercially sensitive information shared during the search confidential. This obligation survives termination of this agreement.</p>
+  </div>
+</section>
+
+<!-- 08 LIABILITY -->
+<section class="clause">
+  <span class="clause-num">08<span class="label">Liability</span></span>
+  <h2 class="clause-heading">Liability</h2>
+  <div class="clause-body">
+    <p>Innova's liability under this agreement is capped at the fees paid under it.</p>
+  </div>
+</section>
+
+<!-- 09 GOVERNING LAW -->
+<section class="clause">
+  <span class="clause-num">09<span class="label">Law</span></span>
+  <h2 class="clause-heading">Governing law</h2>
+  <div class="clause-body">
+    <p>This agreement is governed by the laws of New South Wales, Australia.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="doc-footer">
+  <span class="brand">Innova Search Pty Ltd</span>
+  <span>ABN 64 696 176 904 &middot; Suite 2204, 520 Oxford Street, Bondi Junction NSW 2022</span>
+</footer>
+
+</body>
+</html>
