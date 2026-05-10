@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Business &mdash; Exclusive Engagement | Innova Search</title>
+<meta name="robots" content="noindex,nofollow">
+<title>Innova Terms of Business &mdash; Exclusive | Innova Search</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -47,9 +48,7 @@
   }
 
   /* CLAUSES */
-  .clause {
-    margin-bottom: 36px;
-  }
+  .clause { margin-bottom: 36px; }
   .clause + .clause {
     border-top: 1px solid rgba(185, 218, 147, 0.45);
     padding-top: 32px;
@@ -78,34 +77,49 @@
     line-height: 1.25;
   }
   .clause-body {
-    font-size: 1rem;
+    font-size: 0.98rem;
     line-height: 1.75;
     color: #181818;
   }
-  .clause-body p + p {
-    margin-top: 14px;
-  }
+  .clause-body p + p { margin-top: 14px; }
 
-  /* DEFINED TERM */
-  .term {
-    color: #043A31;
+  /* DEFINED TERM (inline) */
+  .term { color: #043A31; font-weight: 700; }
+
+  /* DEFINITION LIST */
+  .definitions {
+    margin-top: 18px;
+  }
+  .definitions dt {
+    font-family: 'Georgia', serif;
     font-weight: 700;
+    color: #043A31;
+    font-size: 0.95rem;
+    margin-top: 14px;
+    margin-bottom: 4px;
+  }
+  .definitions dt:first-child { margin-top: 0; }
+  .definitions dd {
+    font-size: 0.96rem;
+    line-height: 1.7;
+    margin-left: 0;
+    color: #181818;
   }
 
-  /* CONDITIONS LIST */
-  .conditions {
+  /* CONDITIONS / BULLET LIST (foam-green dot) */
+  .bullets {
     list-style: none;
-    margin: 18px 0 0;
+    margin: 16px 0 0;
     padding: 0;
   }
-  .conditions li {
+  .bullets li {
     position: relative;
     padding-left: 24px;
     margin-bottom: 12px;
     font-size: 0.97rem;
     line-height: 1.65;
   }
-  .conditions li::before {
+  .bullets li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -116,7 +130,7 @@
     border-radius: 50%;
   }
 
-  /* TABLES (fee + milestones share styling) */
+  /* TABLE */
   .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -142,22 +156,16 @@
     border-top: 1px solid rgba(4, 58, 49, 0.08);
     font-size: 0.97rem;
     color: #181818;
-    vertical-align: top;
   }
-  .fee-table tbody td:last-child {
+  .data-table tbody td:last-child {
     font-weight: 700;
     color: #043A31;
     text-align: right;
     width: 110px;
     font-variant-numeric: tabular-nums;
   }
-  .milestone-table tbody td:first-child {
-    font-weight: 700;
-    color: #043A31;
-    width: 38%;
-  }
 
-  /* FOOTNOTE under tables / clauses */
+  /* FOOTNOTE */
   .footnote {
     font-size: 0.9rem;
     color: #4a6058;
@@ -165,7 +173,7 @@
     margin-top: 12px;
   }
 
-  /* DOC FOOTER (identity only, no signatures) */
+  /* DOC FOOTER */
   .doc-footer {
     margin-top: 48px;
     padding: 20px 0 24px;
@@ -185,46 +193,96 @@
     letter-spacing: 0.04em;
   }
 
-  /* RESPONSIVE */
   @media (max-width: 680px) {
     body { padding: 32px 22px 0; }
     .doc-title { font-size: 1.55rem; }
     .clause-heading { font-size: 1.1rem; }
     .data-table thead th,
     .data-table tbody td { padding: 11px 14px; font-size: 0.92rem; }
-    .fee-table tbody td:last-child { width: 80px; }
-    .milestone-table tbody td:first-child { width: 45%; }
+    .data-table tbody td:last-child { width: 80px; }
   }
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="doc-header">
   <div class="doc-eyebrow">Innova Search</div>
-  <h1 class="doc-title">Exclusive engagement &mdash; Terms of Business</h1>
-  <p class="doc-subtitle">Standard terms applying to exclusive search engagements with Innova Search Pty Ltd. Per-deal commercials (engagement fee, completion fee, exclusivity period) are set out in the proposal accepted alongside these terms.</p>
+  <h1 class="doc-title">Terms of Business</h1>
+  <p class="doc-subtitle">Standard Terms of Business of Innova Search Pty Ltd (ACN 696 176 904, ABN 64 696 176 904), applying to all recruitment and search engagements unless varied in writing by an executed proposal.</p>
 </header>
 
-<!-- 01 ENGAGEMENT -->
+<!-- 1 ENGAGEMENT AND AGREEMENT -->
 <section class="clause">
-  <span class="clause-num">01<span class="label">Engagement</span></span>
-  <h2 class="clause-heading">The engagement</h2>
+  <span class="clause-num">01<span class="label">Engagement and Agreement</span></span>
+  <h2 class="clause-heading">Engagement and Agreement</h2>
   <div class="clause-body">
-    <p>These terms apply where the Client (the engaging counterparty named in the proposal) appoints Innova Search Pty Ltd (<span class="term">Innova</span>) on an exclusive basis to identify and introduce a candidate for a senior leadership role. Exclusivity allows Innova to represent the Client properly in the market and gives the search the depth of attention it requires.</p>
-    <p>The role, exclusivity period, and engagement amounts are set out in the proposal accepted alongside these terms.</p>
+    <p>These Terms of Business (&ldquo;<span class="term">Terms</span>&rdquo;) apply when you (&ldquo;<span class="term">the Client</span>&rdquo;):</p>
+    <ul class="bullets">
+      <li>Request that Innova Search Pty Ltd, ACN 696 176 904, ABN 64 696 176 904 (&ldquo;<span class="term">Innova</span>&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;) provide recruitment or contractor sourcing services, whether verbally or in writing;</li>
+      <li>Interview a person introduced or presented by us; or</li>
+      <li>Employ, engage, or otherwise retain a person introduced by us, directly or indirectly, including via referral to a third party.</li>
+    </ul>
+    <p>By proceeding with any of the above, you agree to these Terms and to pay our fees as set out below.</p>
   </div>
 </section>
 
-<!-- 02 FEE -->
+<!-- 2 KEY DEFINITIONS -->
 <section class="clause">
-  <span class="clause-num">02<span class="label">Fee</span></span>
-  <h2 class="clause-heading">Placement fee</h2>
+  <span class="clause-num">02<span class="label">Key Definitions</span></span>
+  <h2 class="clause-heading">Key Definitions</h2>
   <div class="clause-body">
-    <p>Placement fees are calculated as a percentage of the candidate's <span class="term">Total Annual Gross Remuneration (TAGR)</span>, defined as base salary plus superannuation plus any sign-on or guaranteed bonuses.</p>
-    <table class="data-table fee-table" aria-label="Innova fee tiers by candidate TAGR">
+    <p><span class="term">Company Details:</span> Innova Search Pty Ltd ACN 696 176 904 ABN 64 696 176 904 is an Australian proprietary company limited by shares registered in New South Wales. The registered office of the Company is Tower 1, Suite 2204 Level 22, 520 Oxford Street, Bondi Junction NSW 2022.</p>
+    <dl class="definitions">
+      <dt>Candidate</dt>
+      <dd>A person introduced by us for potential employment or engagement by you.</dd>
+
+      <dt>Contractor</dt>
+      <dd>A person engaged by Innova and on-hired to you for a temporary assignment.</dd>
+
+      <dt>Fee</dt>
+      <dd>The total amount payable to Innova as defined in clause 3, which may include Retainer, Shortlist, Success, Placement, or Contractor fees.</dd>
+
+      <dt>Placement Fee</dt>
+      <dd>The fee payable upon a Candidate introduced by us accepting an offer of employment or engagement (including through a Related Entity or third party).</dd>
+
+      <dt>Retainer Fee</dt>
+      <dd>The initial fee securing an exclusive retained search engagement.</dd>
+
+      <dt>Shortlist Fee</dt>
+      <dd>Payable upon presentation of a shortlist of qualified Candidates.</dd>
+
+      <dt>Completion Fee</dt>
+      <dd>Payable upon successful acceptance of an offer by the appointed Candidate.</dd>
+
+      <dt>Total Annual Gross Remuneration (TAGR)</dt>
+      <dd>Includes base salary, superannuation, as well as any sign-on or guaranteed bonuses.</dd>
+
+      <dt>Proposal</dt>
+      <dd>Any written proposal or agreement provided by Innova outlining scope, fees, or search terms.</dd>
+
+      <dt>Relevant Commencement Date</dt>
+      <dd>The date of the last correspondence regarding a specific role or search.</dd>
+
+      <dt>End Date</dt>
+      <dd>12 months following the Relevant Commencement Date.</dd>
+
+      <dt>Related Entity</dt>
+      <dd>As defined in the Corporations Act 2001 (Cth).</dd>
+    </dl>
+    <p class="footnote">Where any inconsistency exists between these Terms and an executed Proposal, the Proposal takes precedence.</p>
+  </div>
+</section>
+
+<!-- 3 FEES AND PAYMENT -->
+<section class="clause">
+  <span class="clause-num">03<span class="label">Fees and Payment</span></span>
+  <h2 class="clause-heading">Fees and Payment</h2>
+  <div class="clause-body">
+    <p>All fees are exclusive of GST and are payable within 14 days of invoice unless otherwise stated. If GST becomes payable under applicable law, it will be added to the invoice.</p>
+    <p>Placement Fees are calculated as a percentage of the Candidate&rsquo;s TAGR according to the following schedule:</p>
+    <table class="data-table" aria-label="Placement fee tiers by candidate TAGR">
       <thead>
-        <tr><th scope="col">TAGR (AUD)</th><th scope="col">Fee</th></tr>
+        <tr><th scope="col">TAGR (AUD)</th><th scope="col">Fee %</th></tr>
       </thead>
       <tbody>
         <tr><td>$1 &ndash; $149,999</td><td>20%</td></tr>
@@ -233,93 +291,149 @@
         <tr><td>$350,000 and above</td><td>26%</td></tr>
       </tbody>
     </table>
-    <p class="footnote">All fees are exclusive of GST and payable within 30 days of invoice. If GST becomes payable under applicable law, it will be added to the invoice. Any dispute regarding an invoice must be raised in writing within seven (7) days of the invoice date.</p>
+    <p>Any dispute regarding an invoice must be raised in writing within seven (7) days of the invoice date. If no written dispute is received within this period, the invoice will be deemed accepted and payable in accordance with these Terms.</p>
   </div>
 </section>
 
-<!-- 03 PAYMENT -->
+<!-- 4 ADDITIONAL COSTS -->
 <section class="clause">
-  <span class="clause-num">03<span class="label">Payment</span></span>
-  <h2 class="clause-heading">Payment schedule</h2>
+  <span class="clause-num">04<span class="label">Additional Costs</span></span>
+  <h2 class="clause-heading">Additional Costs</h2>
   <div class="clause-body">
-    <p>For exclusive engagements, the placement fee is split across two milestones, with the specific amounts set out in the engaging proposal.</p>
-    <table class="data-table milestone-table" aria-label="Milestone payment schedule">
-      <thead>
-        <tr><th scope="col">Milestone</th><th scope="col">Timing</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Engagement fee</td><td>Payable on signing of the engaging proposal.</td></tr>
-        <tr><td>Completion payment</td><td>Payable on the candidate's commencement date.</td></tr>
-      </tbody>
-    </table>
+    <p>You agree to reimburse advertising, psychometric testing, background checks, or other pre-approved costs within 14 days of invoice, regardless of whether a hire is made.</p>
+    <p>No refunds apply except where expressly agreed in writing.</p>
   </div>
 </section>
 
-<!-- 04 EXCLUSIVITY -->
+<!-- 5 REPLACEMENT GUARANTEE -->
 <section class="clause">
-  <span class="clause-num">04<span class="label">Exclusivity</span></span>
-  <h2 class="clause-heading">Exclusivity</h2>
+  <span class="clause-num">05<span class="label">Replacement Guarantee</span></span>
+  <h2 class="clause-heading">Replacement Guarantee</h2>
   <div class="clause-body">
-    <p>The engagement is exclusive for the period set out in the engaging proposal, from the date of signing. During this period the Client agrees not to engage any other search firm or recruitment agency for the same role.</p>
-  </div>
-</section>
-
-<!-- 05 REPLACEMENT GUARANTEE -->
-<section class="clause">
-  <span class="clause-num">05<span class="label">Guarantee</span></span>
-  <h2 class="clause-heading">Replacement guarantee</h2>
-  <div class="clause-body">
-    <p>If a candidate placed by Innova leaves their employment within 13 weeks of commencement (inclusive of any notice period), Innova will use reasonable efforts to introduce a replacement candidate for the same role at no additional fee, subject to the following conditions:</p>
-    <ul class="conditions">
-      <li>The candidate's departure is voluntary and not due to redundancy, organisational restructure, material change to the role, or termination by the Client (including performance-related termination).</li>
-      <li>The replacement search is limited to the original role scope, including substantially similar responsibilities, seniority, and remuneration.</li>
-      <li>The Client continues to engage Innova on an exclusive basis for the replacement search.</li>
+    <p>If a Candidate placed by Innova leaves their employment within 13 weeks of commencement (inclusive of any notice period), Innova will use reasonable efforts to introduce a replacement Candidate for the same role at no additional fee, subject to the following conditions:</p>
+    <ul class="bullets">
+      <li>The Candidate&rsquo;s departure is voluntary and not due to redundancy, organisational restructure, material change to the role, or termination by the Client (including performance-related termination);</li>
+      <li>The replacement search is limited to the original role scope, including substantially similar responsibilities, seniority, and remuneration;</li>
+      <li>The Client continues to engage Innova on an exclusive basis for the replacement search; and</li>
       <li>All invoices have been paid in full in accordance with agreed terms.</li>
     </ul>
     <p class="footnote">No refunds will be provided under any circumstances. Replacement availability is not guaranteed.</p>
   </div>
 </section>
 
-<!-- 06 EXPENSES -->
+<!-- 6 LIABILITY AND INDEMNITY -->
 <section class="clause">
-  <span class="clause-num">06<span class="label">Expenses</span></span>
-  <h2 class="clause-heading">Expenses</h2>
+  <span class="clause-num">06<span class="label">Liability and Indemnity</span></span>
+  <h2 class="clause-heading">Liability and Indemnity</h2>
   <div class="clause-body">
-    <p>Direct search expenses are charged at cost with prior written approval from the Client. No mark-ups are applied.</p>
+    <p>Innova provides recruitment services and does not guarantee the suitability, performance, or continued engagement of any Candidate or Contractor. The Client is responsible for conducting its own due diligence, including verifying a Candidate&rsquo;s qualifications, experience, references, right to work, and suitability for the role.</p>
+    <p>To the maximum extent permitted by law, Innova excludes all liability for any loss, damage, cost, or expense (including indirect or consequential loss) arising from:</p>
+    <ul class="bullets">
+      <li>the introduction, engagement, or employment of any Candidate or Contractor; or</li>
+      <li>any act, omission, misconduct, negligence, or default of any Candidate or Contractor.</li>
+    </ul>
+    <p>The Client agrees to indemnify and hold harmless Innova, its directors, employees, and agents from and against any and all claims, losses, liabilities, damages, and expenses (including legal costs on a full indemnity basis) arising from:</p>
+    <ul class="bullets">
+      <li>the Client&rsquo;s engagement or employment of a Candidate or Contractor;</li>
+      <li>any breach by the Client of applicable laws, including workplace health and safety, employment, or anti-discrimination laws; or</li>
+      <li>any breach of these Terms by the Client.</li>
+    </ul>
+    <p>Innova&rsquo;s total aggregate liability under or in connection with these Terms, whether in contract, tort (including negligence), or otherwise, is limited to the total fees paid by the Client to Innova for the relevant placement or engagement giving rise to the claim.</p>
   </div>
 </section>
 
-<!-- 07 CONFIDENTIALITY -->
+<!-- 7 INTRODUCTIONS AND REFERRALS -->
 <section class="clause">
-  <span class="clause-num">07<span class="label">Confidentiality</span></span>
-  <h2 class="clause-heading">Confidentiality</h2>
+  <span class="clause-num">07<span class="label">Introductions and Referrals</span></span>
+  <h2 class="clause-heading">Introductions and Referrals</h2>
   <div class="clause-body">
-    <p>Both parties agree to keep the engagement, candidate identities, and any commercially sensitive information shared during the search confidential. This obligation survives termination of this agreement.</p>
+    <p>If you (or any Related Entity or third party referred by you) employ, engage or otherwise retain a Candidate introduced by Innova within 12 months of the Relevant Commencement Date, including in the Role or in any similar, related or alternative position regardless of title, reporting line or employment structure, the applicable Fee will be payable in full.</p>
+    <p>For the purposes of these Terms, engagement includes permanent employment, fixed-term employment, contractor or interim engagement, consultancy arrangements, advisory or board positions, or engagement through any third-party provider or intermediary.</p>
+    <p>To avoid duplication, the Client must disclose in writing any candidate already known to the Client for the relevant Role prior to the commencement of the search. If the Client fails to disclose a previously known candidate before Innova introduces that candidate, the candidate will be deemed to have been introduced by Innova for the purposes of these Terms and the applicable Fee will apply if that candidate is subsequently engaged.</p>
   </div>
 </section>
 
-<!-- 08 LIABILITY -->
+<!-- 8 CONTRACTORS -->
 <section class="clause">
-  <span class="clause-num">08<span class="label">Liability</span></span>
-  <h2 class="clause-heading">Liability</h2>
+  <span class="clause-num">08<span class="label">Contractors</span></span>
+  <h2 class="clause-heading">Contractors</h2>
   <div class="clause-body">
-    <p>Innova's liability under this agreement is capped at the fees paid under it.</p>
+    <p>When you engage a Contractor through Innova:</p>
+    <ul class="bullets">
+      <li>The Contractor remains under your day-to-day supervision and direction;</li>
+      <li>You must provide a safe workplace, induction, and compliance with WHS and anti-discrimination laws;</li>
+      <li>You must not discuss commercial terms with the Contractor;</li>
+      <li>You must reimburse approved out-of-pocket expenses;</li>
+      <li>If the Client directly employs or engages a Contractor introduced by Innova within 12 months of the commencement or completion of the Contractor&rsquo;s assignment, a Placement Fee will apply based on the Contractor&rsquo;s Total Annual Gross Remuneration.</li>
+    </ul>
+    <p>Innova manages all payroll, taxation, superannuation, and insurance obligations for Contractors unless otherwise stated in writing.</p>
   </div>
 </section>
 
-<!-- 09 GOVERNING LAW -->
+<!-- 9 CONFIDENTIALITY AND PRIVACY -->
 <section class="clause">
-  <span class="clause-num">09<span class="label">Law</span></span>
-  <h2 class="clause-heading">Governing law</h2>
+  <span class="clause-num">09<span class="label">Confidentiality and Privacy</span></span>
+  <h2 class="clause-heading">Confidentiality and Privacy</h2>
   <div class="clause-body">
-    <p>This agreement is governed by the laws of New South Wales, Australia.</p>
+    <p>Information about Candidates and Contractors is confidential and governed by the Privacy Act 1988 (Cth). You agree to:</p>
+    <ul class="bullets">
+      <li>Use personal information solely for assessing suitability for employment or engagement;</li>
+      <li>Comply with the Privacy Act 1988 (Cth) and Innova&rsquo;s Privacy Policy; and</li>
+      <li>Indemnify Innova for any breach of privacy obligations by your business, employees, or agents.</li>
+    </ul>
+    <p>Candidate information provided by Innova, including r&eacute;sum&eacute;s, profiles and related materials, is confidential and may only be used for assessing suitability for employment or engagement with the Client. Such information must not be shared with any third party without the prior written consent of Innova. If the Client shares candidate information with a Related Entity or third party who subsequently employs or engages that Candidate within the applicable ownership period, the Placement Fee will remain payable.</p>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- 10 FORCE MAJEURE -->
+<section class="clause">
+  <span class="clause-num">10<span class="label">Force Majeure</span></span>
+  <h2 class="clause-heading">Force Majeure</h2>
+  <div class="clause-body">
+    <p>Innova is not liable for delay or failure in performance caused by events beyond its reasonable control, including natural disasters, industrial disputes, or pandemics. Time for performance will be extended accordingly.</p>
+  </div>
+</section>
+
+<!-- 11 GOVERNING LAW -->
+<section class="clause">
+  <span class="clause-num">11<span class="label">Governing Law</span></span>
+  <h2 class="clause-heading">Governing Law</h2>
+  <div class="clause-body">
+    <p>These Terms are governed by the laws of the state of New South Wales. Any disputes will be subject to the exclusive jurisdiction of the courts of that state or territory.</p>
+  </div>
+</section>
+
+<!-- 12 AMENDMENTS -->
+<section class="clause">
+  <span class="clause-num">12<span class="label">Amendments</span></span>
+  <h2 class="clause-heading">Amendments</h2>
+  <div class="clause-body">
+    <p>These Terms may only be amended in writing by a Director of Innova. No verbal or implied variation is binding.</p>
+  </div>
+</section>
+
+<!-- 13 EXCLUSIVITY -->
+<section class="clause">
+  <span class="clause-num">13<span class="label">Exclusivity</span></span>
+  <h2 class="clause-heading">Exclusivity</h2>
+  <div class="clause-body">
+    <p>The Client appoints Innova as its exclusive recruitment partner for the search and appointment of the role outlined in this engagement (the &ldquo;<span class="term">Role</span>&rdquo;).</p>
+    <p>During the exclusivity period, the Client agrees that it will not engage, instruct or accept candidate introductions for the Role from any other recruitment firm, search firm or intermediary.</p>
+    <p>The Client may continue to consider candidates who apply directly to the business or who are referred directly to the Client by existing employees, investors or personal networks, provided that such candidates have not been introduced by another recruitment firm, search provider or intermediary.</p>
+    <p>Where a candidate has already been identified by the Client prior to this engagement, the Client will disclose those candidates in writing at the commencement of the search to avoid any duplication.</p>
+    <p>For the avoidance of doubt, any candidate introduced to the Client by Innova during the engagement will remain the property of Innova for a period of 12 months from the date of introduction. Should the Client appoint that candidate to the Role, or to any other role within the Client&rsquo;s organisation or associated entities during that period, the agreed recruitment fee will apply.</p>
+    <p>Exclusivity will apply from the date of this agreement and remain in place until the earlier of:</p>
+    <ul class="bullets">
+      <li>the successful appointment of a candidate to the Role;</li>
+      <li>written termination of the engagement by either party; or</li>
+      <li>[90] days from the commencement of the search.</li>
+    </ul>
+  </div>
+</section>
+
 <footer class="doc-footer">
   <span class="brand">Innova Search Pty Ltd</span>
-  <span>ABN 64 696 176 904 &middot; Suite 2204, 520 Oxford Street, Bondi Junction NSW 2022</span>
+  <span>ACN 696 176 904 &middot; ABN 64 696 176 904 &middot; Tower 1, Suite 2204 Level 22, 520 Oxford Street, Bondi Junction NSW 2022</span>
 </footer>
 
 </body>
