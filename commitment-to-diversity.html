@@ -60,44 +60,6 @@
     color: #2a2a2a;
   }
 
-  /* BLOCK 3 — quote cards */
-  .lead-in {
-    font-size: 1.0rem;
-    font-style: italic;
-    color: #043A31;
-    margin-bottom: 28px;
-    font-weight: 600;
-  }
-  .quote-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
-  @media (max-width: 680px) {
-    .quote-grid { grid-template-columns: 1fr; }
-  }
-  .quote-card {
-    background: #B9DA93;
-    border-radius: 6px;
-    padding: 28px 22px;
-    position: relative;
-  }
-  .quote-mark {
-    font-size: 3.2rem;
-    color: #043A31;
-    line-height: 0.5;
-    font-family: Georgia, serif;
-    margin-bottom: 14px;
-    display: block;
-    opacity: 0.45;
-  }
-  .quote-text {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    color: #181818;
-    font-style: italic;
-  }
-
   /* Divider */
   .divider {
     border: none;
@@ -138,19 +100,18 @@
   <!-- BLOCK 3 -->
   <div class="block">
     <h2 class="block-heading">Track record</h2>
-    <p class="lead-in">Marie has led this work for years. It&rsquo;s now how all three of us run every search.</p>
-    <div class="quote-grid">
-      <div class="quote-card">
-        <span class="quote-mark">&ldquo;</span>
-        <p class="quote-text">Marie was a trusted agency supplier for multiple contract engineering hires. She also kept diversity front of mind and always presented a balanced shortlist, enabling us to bring more female engineers into the team.</p>
+    <div class="sub-blocks">
+      <div class="sub-block">
+        <div class="sub-block-title">Community programs</div>
+        <p class="sub-block-body">Recurring industry events that bring together underrepresented technology talent and the leaders hiring them. The network behind every shortlist starts here.</p>
       </div>
-      <div class="quote-card">
-        <span class="quote-mark">&ldquo;</span>
-        <p class="quote-text">Instrumental in placing highly talented professionals within our organisation, with 2 out of 5 placements being outstanding female candidates. This achievement reflects her dedication to promoting gender diversity and her ability to find and place exceptional engineers.</p>
+      <div class="sub-block">
+        <div class="sub-block-title">Above-market representation</div>
+        <p class="sub-block-body">Diverse candidates land on Innova shortlists and in offers at rates well above the market average for senior technology hiring.</p>
       </div>
-      <div class="quote-card">
-        <span class="quote-mark">&ldquo;</span>
-        <p class="quote-text">A tremendous people connector in tech, with a particular focus on advancing and empowering women in the industry. The Women in Tech events have been incredibly well organised, highly attended, and a catalyst for meaningful conversations that would not otherwise have happened.</p>
+      <div class="sub-block">
+        <div class="sub-block-title">Curated talent pools</div>
+        <p class="sub-block-body">Deep pipelines of senior technology candidates outside the dominant referral patterns. Built search by search, ready the moment a brief opens.</p>
       </div>
     </div>
   </div>
